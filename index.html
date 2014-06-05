@@ -141,7 +141,7 @@ resource.</p>
 			</div>
 			<div class="right-side">
 				<p>Our flexible solution and experienced team can meet any legacy modernization need. If you are seeking a clear path to a revitalized mainframe without disrupting people or processes, we encourage you to </p>
-				<a href="#"><img src="img/contact-btn.png"></a>
+				<a href="#" class="contact-us"><img src="img/contact-btn.png"></a>
 			</div>
 		</div>
 	</div>
@@ -157,6 +157,16 @@ resource.</p>
 	</div>
 	<div class="darkwin"></div>
 	<script>
+		$.fn.preload_images = function() {
+		    this.each(function(){
+		        $('<img/>')[0].src = this;
+		    });
+		}
+
+		$(document).ready(function () {
+			$(['img/progress/step4_img1_big.png']).preload_images();
+		});
+
 		$(function() {
 
 			if ($('header').width() < 1000) {
@@ -187,7 +197,8 @@ resource.</p>
 				}
 			})
 
-			$('.fixed-button').click(function() {
+			$('.fixed-button, .contact-us').click(function(e) {
+				e.preventDefault();
 				$('.darkwin').show();
 				$('.pop-window').show();
 			})
@@ -318,7 +329,7 @@ resource.</p>
 			$('.screen4-block').click(function() {
 				if (!$(this).hasClass('screen-block-disable')) {
 					$('.screen1-block, .screen2-block, .screen3-block, .screen4-block').addClass('screen-block-disable');
-					$('.screen-text').text('Done! Day 3 and beyond (all combined together in an iPad)');
+					$('.screen-text').text('Done! And its mobile too!');
 	  				//$('.screen4-block').animate({'opacity': 1});
 	  				//$('.screen2-block, .screen3-block, .screen1-block').css({'opacity': 0.5});
 	  				$('.screen4-block').addClass('screen-block-active');
@@ -328,11 +339,11 @@ resource.</p>
 	  					$('.screen3-2-view').animate({'marginLeft': '-60px', 'top' : '120px'}, 300);
 	  					$('.screen3-3-view').animate({'marginLeft': '-60px', 'top' : '228px'}, 300);
 	  					$('.screen3-4-view').animate({'marginLeft': '-200px', 'top' : '228px'}, 300, function() {
-	  						$('.screen4-view-block').show('fast', function() {
-	  							$('.screen3-view-block').hide('fast', function() {
+	  						$('.screen3-view-block').hide('fast', function() {
+		  						$('.screen4-view-block').show('fast', function() {
 	  								$('.screen3-view, .screen3-2-view, .screen3-3-view, .screen3-4-view').css({'margin-left':'', 'top' : ''});
 	  								$('.screen1-block, .screen2-block, .screen3-block, .screen4-block').removeClass('screen-block-disable');
-	  							});
+		  						});
 	  						});
 	  					});
 	  				} else {
