@@ -836,8 +836,8 @@ footer {
     -webkit-transition: .4s;   
     transition: .4s;  
     position: absolute;
-	right: 2px;
-	top: 2px;
+	right: 1px;
+	top: 1px;
 }
 .window-close:hover {
     -ms-transform: rotate(360deg); 
