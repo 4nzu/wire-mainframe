@@ -906,11 +906,17 @@ footer {
 	.modernize-block {
 		padding-bottom: 20px;
 	}
+	.keep-block {
+		min-height: 384px;
+	}
 	.keep-block h2{
-		padding-top: 30px;
+		padding-top: 45px;
+	}
+	.transition-block {
+		min-height: 418px;
 	}
 	.transition-block h2  {
-	 	padding-top: 60px;
+	 	padding-top: 90px;
 	}
 	.screens-block h2 {
 		font-size: 25px;
