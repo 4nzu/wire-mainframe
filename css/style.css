@@ -546,12 +546,18 @@ header .keep-btn:hover, header .transition-btn:hover {
 .brandon-block p {
 	padding-bottom: 25px;
 }
-.empowering-block {
+.empowering-block, .info-block {
 	width: 100%;
 	background: #4b7c8f url(../img/empowering-bg.png) center top no-repeat;
 	min-height: 317px;
 	border-bottom: 5px solid #77b320;
 	padding-bottom: 20px;
+}
+.info-block {
+	text-align: center;
+}
+.info-block img {
+	max-width: 100%;
 }
 .empowering-block .left-side {
 	overflow: hidden;
@@ -710,7 +716,7 @@ footer {
 	right: 0;
 	background: rgba(0,0,0,0.8);
 }
-.pop-window {
+.pop-window, .alert-window {
 	position: fixed;
 	width: 580px;
 	top: 20%;
