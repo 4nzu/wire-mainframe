@@ -70,6 +70,7 @@ header {
 	color: #fff;
 	padding-top: 80px;
 	position: relative;
+	z-index: 2;
 }
 .logo {
 	width: 100%;
@@ -163,8 +164,33 @@ header .keep-btn:hover, header .transition-btn:hover {
 	right: 10px;
 }
 .fixed-button:hover {
+	font-weight: bold;
 	border: 1px solid rgba(119, 179, 32, 0.9);
 	background: rgba(119, 179, 32, 1);;
+}
+.mainframe-button {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 100;
+	text-align: center;
+	padding: 10px 20px;
+	border: 0;
+	cursor: pointer;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	border: 5px solid #77B320;
+	background: #77b320;
+	position: absolute;
+	bottom: -27px;
+	left: 50%;
+	margin-left: -78.5px;
+	text-transform: uppercase;
+}
+.mainframe-button:hover {
+	text-shadow: 1px 1px 1px #333;
+	background: #8FD52A;
 }
 .scroll {
 	width: 92px;
@@ -178,6 +204,7 @@ header .keep-btn:hover, header .transition-btn:hover {
 	background: #fff url(../img/keep-bg.png) center top no-repeat;
 	min-height: 404px;
 	border-bottom: 5px solid #77b320;
+	position: relative;
 }
 .transition-block {
 	width: 100%;
@@ -546,18 +573,12 @@ header .keep-btn:hover, header .transition-btn:hover {
 .brandon-block p {
 	padding-bottom: 25px;
 }
-.empowering-block, .info-block {
+.empowering-block {
 	width: 100%;
 	background: #4b7c8f url(../img/empowering-bg.png) center top no-repeat;
 	min-height: 317px;
 	border-bottom: 5px solid #77b320;
 	padding-bottom: 20px;
-}
-.info-block {
-	text-align: center;
-}
-.info-block img {
-	max-width: 100%;
 }
 .empowering-block .left-side {
 	overflow: hidden;
@@ -716,7 +737,7 @@ footer {
 	right: 0;
 	background: rgba(0,0,0,0.8);
 }
-.pop-window, .alert-window {
+.pop-window, .alert-window, .info-window {
 	position: fixed;
 	width: 580px;
 	top: 20%;
@@ -730,6 +751,14 @@ footer {
 	border-radius: 4px;
 	padding: 20px;
 	display: none;
+}
+.info-window {
+	max-height: 90%;
+	top: 5%;
+	overflow: auto;
+}
+.info-window img {
+	max-width: 100%;
 }
 .window-close {
     color: #222;

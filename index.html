@@ -32,6 +32,7 @@
 		<h2>Keep my mainframe</h2>
 		<p>WIRE is the cost effective, practical approach to modernizing and mobilizing your mainframe. WIRE spares your business years of transitional costs and labor by modifying your system instead of replacing it. The web-style interface streamlines workflow by enabling multiple functions to be performed on a single screen, enhancing overall productivity and limiting user error.</p>
 		</div>
+		<button type="button" class="mainframe-button">Mainframe</button>
 	</div>
 	<div class="transition-block">
 		<div class="container">
@@ -88,8 +89,8 @@
 mainframe and re-energize your business. For many enterprises, the mainframe is the 
 business-critical platform, yet legacy applications remain inaccessible to the vast majority of users. Mainframe modernization solves the problem.</p>
 
-<p>Using Brandon solutions, enterprises update legacy apps with easy Web interfaces, create rich new Web composite apps incorporating mainframe and other information assets, provide 
-selfservice access to millions of new users, and restart the mainframe as a revenue engine.</p>
+<p>Using WIRE, enterprises update legacy apps with easy Web interfaces, create rich new Web composite apps incorporating mainframe and other information assets, provide 
+Hyphenate selfservice access to millions of new users, and restart the mainframe as a revenue engine.</p>
 			</div>
 		</div>
 	</div>
@@ -102,7 +103,7 @@ selfservice access to millions of new users, and restart the mainframe as a reve
 				<h2>Empowering The Modern User</h2>
 				<p>Legacy mainframe applications were built at a time when highly trained operators had sole access to core business systems. Other employees, partners, and customers could “interact” with the mainframe only through these power users working in a call center or office pool.</p>
 
-				<p>Today, however, people expect instant self-service access to everything – bank accounts, insurance policies, health records, and so on. For many organizations, providing that access and tapping the vast pool of user productivity can revolution business.</p>
+				<p>Today, however, people expect instant self-service access to everything – bank accounts, insurance policies, health records, and so on. For many organizations, providing that access and tapping the vast pool of user productivity can revolutionize business.</p>
 			</div>
 			<div class="clearfix"></div>
 		</div> 
@@ -145,11 +146,6 @@ resource.</p>
 			</div>
 		</div>
 	</div>
-	<div class="empowering-block">
-		<div class="container">
-			<img src="img/mianframe.jpg" alt="">
-		</div> 
-	</div>
 	<footer>
 		<div class="container">
 			631-293-1414 26 Sarah Drive, Farmingdale, New York 11735 | www.wire-mainframe.com
@@ -165,7 +161,11 @@ resource.</p>
 		<div class="window-content">
 			Alert
 		</div>
-	</div>
+	</div>  
+	<div class="info-window window">
+		<i class="window-close">&#10006;</i>
+		<img src="img/mianframe.jpg" alt="">
+	</div> 
 	<div class="darkwin"></div>
 	<script>
 		$.fn.preload_images = function() {
@@ -217,6 +217,12 @@ resource.</p>
 				e.preventDefault();
 				$('.darkwin').show();
 				$('.pop-window').show();
+			})
+
+			$('.mainframe-button').click(function(e) {
+				e.preventDefault();
+				$('.darkwin').show();
+				$('.info-window').show();
 			})
 
 			$('.window-close, .darkwin').click(function() {
