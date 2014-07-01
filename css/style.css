@@ -752,6 +752,28 @@ footer {
 	padding: 20px;
 	display: none;
 }
+.pop-window td {
+	font-family: 'Helvetica neue', sans-serif !important;
+	font-weight: 300 !important;
+	font-size: 16px !important;
+	line-height: 22px !important;
+}
+.pop-window td input {
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+}
+.pop-window td input[type="submit"] {
+	background: #4B7C8F;
+	color: #fff;
+}
 .info-window {
 	max-height: 90%;
 	top: 5%;
