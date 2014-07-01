@@ -775,7 +775,7 @@ footer {
 .pop-window, .alert-window, .info-window, .events-window {
 	position: absolute;
 	width: 580px;
-	top: 20%;
+	top: 5%;
 	left: 50%;
 	margin-left: -290px;
 	z-index: 9999999;
@@ -784,9 +784,43 @@ footer {
 	-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.63);
 	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.63);
 	border-radius: 4px;
-	padding: 20px;
+	padding: 20px 20px 40px;
 	display: none;
 	z-index: 91;
+}
+.events-window {
+	font-family: arial;
+}
+.events-title {
+	font-size: 22px;
+}
+.event-title {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bold;
+}
+.events-window li {
+	padding: 20px 0 0;
+}
+.events-divider {
+	padding: 0 0 20px;
+	border-bottom: 1px solid #aaa;
+	width: 80%;
+}
+.event-details {
+	font-size: 14px;
+}
+.event-address {
+	padding: 0 10px;
+}
+.event-date {
+	font-weight: bold;
+}
+.event-text {
+	padding-top: 5px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #222;
 }
 .window h3 {
 	font-weight: bold;
