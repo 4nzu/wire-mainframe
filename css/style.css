@@ -954,6 +954,12 @@ footer {
 		padding-top: 20px;
 		padding-bottom: 90px;
 	}
+	.pop-window td {
+		display: table;
+	}
+	.pop-window table {
+		width: 100% !important;
+	}
 }
 
 
