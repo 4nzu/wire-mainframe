@@ -178,7 +178,8 @@ header .keep-btn:hover, header .transition-btn:hover {
 	font-size: 22px;
 	font-weight: 100;
 	text-align: center;
-	padding: 10px 20px;
+	width: 350px;
+	padding: 32px 0;
 	border: 0;
 	cursor: pointer;
 	transition: all 1s;
@@ -187,9 +188,9 @@ header .keep-btn:hover, header .transition-btn:hover {
 	border: 5px solid #77B320;
 	background: #77b320;
 	position: absolute;
-	bottom: -27px;
+	bottom: -50px;
 	left: 50%;
-	margin-left: -78.5px;
+	margin-left: -175px;
 	text-transform: uppercase;
 }
 .mainframe-button:hover {
@@ -774,6 +775,7 @@ footer {
 	left: 0;
 	right: 0;
 	background: rgba(0,0,0,0.8);
+	z-index: 90;
 }
 .pop-window, .alert-window, .info-window {
 	position: fixed;
@@ -789,6 +791,7 @@ footer {
 	border-radius: 4px;
 	padding: 20px;
 	display: none;
+	z-index: 91;
 }
 .pop-window td {
 	font-family: 'Helvetica neue', sans-serif !important;
