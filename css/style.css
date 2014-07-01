@@ -736,9 +736,14 @@ footer {
 	text-align: center;
 	color: #708790;
 	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
 }
 .btns-mobile button {
-	display: inline-block
+	display: inline-block;
 	color: #fff;
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
@@ -753,6 +758,13 @@ footer {
 	border: 1px solid rgba(65, 65, 65, 1);
 	background: rgba(65, 65, 65, 0.7);
 	margin: 5px;
+}
+.btns-mobile button:hover {
+	font-weight: bold;
+	border: 1px solid rgba(119, 179, 32, 0.9);
+	background: rgba(119, 179, 32, 1);;
+	border: 1px solid rgba(50, 50, 50, 1);
+	background: rgba(50, 50, 50, 1);
 }
 .darkwin {
 	display: none;
@@ -867,10 +879,16 @@ footer {
 		padding: 16px 0;
 	}
 	.scroll-block {
+		margin-left: -45.5px;
+	}
+	.scroll-text {
 		display: none;
 	}
 }
 @media (max-width: 690px) {
+	header {
+		padding-top: 30px;
+	}
 	.empowering-block .right-side {
 		width: 100%;
 		text-align: center;
@@ -889,6 +907,16 @@ footer {
 	.modernize-block {
 		padding-bottom: 20px;
 	}
+	.keep-block h2, .transition-block h2 {
+		padding-top: 30px;
+	}
+	.screens-block h2 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.slide-block {
+		min-height: 400px;
+	}
 }
 @media (max-width: 495px) {
 	header h1 {
@@ -905,6 +933,9 @@ footer {
 	}
 	.btns-mobile {
 		display: block;
+	}
+	footer {
+		padding-top: 90px;
 	}
 }
 
