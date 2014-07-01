@@ -928,6 +928,11 @@ footer {
 	.slide-block {
 		min-height: 330px;
 	}
+	.window {
+		width: 90%;
+		margin-left: -45%;
+		box-sizing: border-box;
+	}
 }
 @media (max-width: 495px) {
 	header h1 {
