@@ -192,11 +192,8 @@ header .keep-btn:hover, header .transition-btn:hover {
 	color: #18333e;
 	text-transform: uppercase;
 }
-.keep-block h2 {
+.keep-block h2, .transition-block h2 {
 	padding: 105px 0 35px 0;
-}
-.transition-block h2 {
-	padding: 70px 0 35px 0;
 }
 .keep-block p, .transition-block p {
 	margin-bottom: 20px;
