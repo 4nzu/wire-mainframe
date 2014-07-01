@@ -910,8 +910,11 @@ footer {
 	.modernize-block {
 		padding-bottom: 20px;
 	}
-	.keep-block h2, .transition-block h2 {
+	.keep-block h2{
 		padding-top: 30px;
+	}
+	.transition-block h2  {
+	 	padding-top: 60px;
 	}
 	.screens-block h2 {
 		font-size: 25px;
