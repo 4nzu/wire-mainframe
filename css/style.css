@@ -101,9 +101,9 @@ header button {
 	padding: 32px 0;
 	border: 0;
 	cursor: pointer;
-	transition: all 1s;
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
 }
 header .keep-btn:hover, header .transition-btn:hover {
 	background: transparent;
@@ -133,38 +133,40 @@ header .keep-btn:hover, header .transition-btn:hover {
 .keep-btn-active, .transition-btn-active {
 	background: transparent;
 	background: rgba(109, 190, 196, 0.1);
-	transition: all 1s;
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
 }
 .scroll-text {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 11px;
 }
-.fixed-button {
-	font-family: 'Raleway', sans-serif;
-	color: #fff;
-	font-size: 22px;
-	font-weight: 100;
-	text-align: center;
-	padding: 10px 20px;
-	border: 0;
-	cursor: pointer;
-	transition: all 1s;
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	border: 1px solid #77b320;
-	background: #77b320;
-	border: 1px solid rgba(119, 179, 32, 0.9);
-	background: rgba(119, 179, 32, 0.8);
+.fixed-buttons {
 	position: fixed;
 	top: 5px;
 	right: 10px;
 }
+.fixed-button {
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	padding: 8px 20px;
+	border: 0;
+	cursor: pointer;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	border: 1px solid rgba(65, 65, 65, 1);
+	background: rgba(65, 65, 65, 0.7);
+	float: right;
+	margin-left:
+}
 .fixed-button:hover {
-	border: 1px solid rgba(119, 179, 32, 0.9);
-	background: rgba(119, 179, 32, 1);;
+	border: 1px solid rgba(50, 50, 50, 1);
+	background: rgba(50, 50, 50, 1);;
 }
 .scroll {
 	width: 92px;
@@ -193,7 +195,7 @@ header .keep-btn:hover, header .transition-btn:hover {
 	text-transform: uppercase;
 }
 .keep-block h2, .transition-block h2 {
-	padding: 105px 0 35px 0;
+	padding: 125px 0 35px 0;
 }
 .keep-block p, .transition-block p {
 	margin-bottom: 20px;
@@ -739,8 +741,8 @@ footer {
     -o-transform: rotate(0deg); 
     -moz-transform:rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .3s;   
-    transition: .3s;  
+    -webkit-transition: .4s;   
+    transition: .4s;  
 }
 .window-close:hover {
     -ms-transform: rotate(360deg); 
