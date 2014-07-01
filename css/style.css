@@ -767,9 +767,10 @@ footer {
 	right: 0;
 	background: rgba(0,0,0,0.8);
 	z-index: 90;
+	overflow: auto;
 }
 .pop-window, .alert-window, .info-window, .events-window {
-	position: fixed;
+	position: absolute;
 	width: 580px;
 	top: 20%;
 	left: 50%;
