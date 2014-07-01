@@ -770,7 +770,7 @@ footer {
 	background: rgba(0,0,0,0.8);
 	z-index: 90;
 }
-.pop-window, .alert-window, .info-window {
+.pop-window, .alert-window, .info-window, .events-window {
 	position: fixed;
 	width: 580px;
 	top: 20%;
@@ -785,6 +785,9 @@ footer {
 	padding: 20px;
 	display: none;
 	z-index: 91;
+}
+.window h3 {
+	font-weight: bold;
 }
 .pop-window td {
 	font-family: 'Helvetica neue', sans-serif !important;
@@ -804,14 +807,15 @@ footer {
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
 }
+.pop-window td input[type="submit"], .pop-window td input[type="reset"] {
+	border-radius: 0;
+}
 .pop-window td input[type="submit"] {
 	background: #4B7C8F;
-	color: #fff;
+	color: #fff !important;
 }
 .info-window {
-	max-height: 90%;
 	top: 5%;
-	overflow: auto;
 }
 .info-window img {
 	max-width: 100%;
