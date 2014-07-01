@@ -769,9 +769,10 @@ footer {
 	right: 0;
 	background: rgba(0,0,0,0.8);
 	z-index: 90;
+	overflow: auto;
 }
-.pop-window, .alert-window, .info-window {
-	position: fixed;
+.pop-window, .alert-window, .info-window, .events-window {
+	position: absolute;
 	width: 580px;
 	top: 20%;
 	left: 50%;
@@ -785,6 +786,9 @@ footer {
 	padding: 20px;
 	display: none;
 	z-index: 91;
+}
+.window h3 {
+	font-weight: bold;
 }
 .pop-window td {
 	font-family: 'Helvetica neue', sans-serif !important;
@@ -804,14 +808,15 @@ footer {
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
 }
+.pop-window td input[type="submit"], .pop-window td input[type="reset"] {
+	border-radius: 0;
+}
 .pop-window td input[type="submit"] {
 	background: #4B7C8F;
-	color: #fff;
+	color: #fff !important;
 }
 .info-window {
-	max-height: 90%;
 	top: 5%;
-	overflow: auto;
 }
 .info-window img {
 	max-width: 100%;
@@ -903,11 +908,17 @@ footer {
 	.modernize-block {
 		padding-bottom: 20px;
 	}
+	.keep-block {
+		min-height: 384px;
+	}
 	.keep-block h2{
-		padding-top: 30px;
+		padding-top: 45px;
+	}
+	.transition-block {
+		min-height: 418px;
 	}
 	.transition-block h2  {
-	 	padding-top: 60px;
+	 	padding-top: 90px;
 	}
 	.screens-block h2 {
 		font-size: 25px;
