@@ -970,6 +970,12 @@ footer {
 		margin-left: -45%;
 		box-sizing: border-box;
 	}
+	.pop-window td {
+		display: table;
+	}
+	.pop-window table {
+		width: 100% !important;
+	}
 }
 @media (max-width: 495px) {
 	header h1 {
@@ -990,12 +996,6 @@ footer {
 	footer {
 		padding-top: 20px;
 		padding-bottom: 90px;
-	}
-	.pop-window td {
-		display: table;
-	}
-	.pop-window table {
-		width: 100% !important;
 	}
 }
 
