@@ -560,7 +560,7 @@ header .keep-btn:hover, header .transition-btn:hover {
 	padding-top: 40px;
 }
 .brandon-block .right-side {
-	padding-top: 85px;
+	padding-top: 55px;
 }
 .brandon-block h2 {
 	font-size: 30px;
@@ -769,7 +769,7 @@ footer {
 	left: 0;
 	right: 0;
 	background: rgba(0,0,0,0.8);
-	z-index: 90;
+	z-index: 99999;
 	overflow: auto;
 }
 .pop-window, .alert-window, .info-window, .events-window {
@@ -786,7 +786,8 @@ footer {
 	border-radius: 4px;
 	padding: 20px 20px 40px;
 	display: none;
-	z-index: 91;
+	z-index: 100000;
+	border: 5px solid #77B320;
 }
 .events-window {
 	font-family: arial;
@@ -821,6 +822,9 @@ footer {
 	font-size: 14px;
 	line-height: 16px;
 	color: #222;
+}
+.download-link, .download-link:hover {
+	color: #4C7C90;
 }
 .window h3 {
 	font-weight: bold;
