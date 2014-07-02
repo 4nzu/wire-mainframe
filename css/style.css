@@ -825,6 +825,8 @@ footer {
 }
 .download-link, .download-link:hover {
 	color: #4C7C90;
+	font-weight: bold;
+	font-size: 17px;
 }
 .window h3 {
 	font-weight: bold;
