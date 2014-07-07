@@ -937,13 +937,15 @@ footer {
 @media (max-width: 1040px) {
 	header {
 		height: 590px;
-		padding-top: 80px;
 	}
 	.events-btn {
 		position: absolute;
 		top: 7px;
 		left: 10px;
 		margin: 0 !important;
+	}
+	.logo {
+		margin: 90px auto 40px auto;
 	}
 }
 
