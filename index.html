@@ -14,6 +14,13 @@
 <body>
 	<header>
 		<div class="container">
+			<button type="button" class="events-btn">
+				<div class="events-btn-block">
+				</div>
+				<div class="events-click">
+					Read More
+				</div>
+			</button>
 			<div class="logo"><a href="http://www.brandonassociates.com/"><img src="img/brandon-systems.png" title="Brandon Systems"></a></div>
 			<h1>Modernizing the Mainframe with WIRE<img style="display: none;" src="img/wire_color.png"></h1>
 			<h2>Modernize legacy applications with new Web interfaces or within rich Web apps to expand user access and accelerate returns on mainframe investments.</h2>
@@ -153,14 +160,10 @@ resource.</p>
 	</footer>
 	<div class="btns-mobile">
 		<div class="container">
-			<button type="button" class="events-btn">Events</button>
 			<button type="button" class="request-btn">Request more info</button>
 		</div>
 	</div>
-	<div class="fixed-buttons">
-		<button type="button" class="fixed-button request-btn">Request more info</button>
-		<button type="button" class="fixed-button events-btn">Events</button>
-	</div> 
+	<button type="button" class="request-btn">Request more info</button>
 	<div class="darkwin">
 		<div class="pop-window window">
 			<i class="window-close">&#10006;</i>
@@ -459,6 +462,10 @@ resource.</p>
 	  				}
 	  			}
 			})
+
+			var eventsBtn = $('.events-window li').first().clone();
+			eventsBtn.find('.event-text').remove();
+			$('.events-btn-block').html(eventsBtn.html());
 
 		});
 	</script>
