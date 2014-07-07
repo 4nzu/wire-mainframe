@@ -152,7 +152,6 @@ header .keep-btn:hover, header .transition-btn:hover {
 	z-index: 3;
 	color: #FAEB8C;
 	font-size: 18px;
-	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	text-align: center;
 	padding: 8px 20px;
@@ -859,10 +858,13 @@ footer {
 	line-height: 16px;
 	color: #222;
 }
-.download-link, .download-link:hover {
+.download-link, .download-link:hover, .events-link, .events-link:hover {
 	color: #4C7C90;
 	font-weight: bold;
 	font-size: 17px;
+}
+.events-link {
+	display: block;
 }
 .window h3 {
 	font-weight: bold;
@@ -916,7 +918,6 @@ footer {
 	top: 1px;
 }
 .events-close {
-	display: none;
 	color: #FAEB8C;
 }
 .window-close:hover {
@@ -1053,9 +1054,6 @@ footer {
 	}
 	.events-click {
 		display: none;
-	}
-	.events-close {
-		display: block;
 	}
 }
 @media (max-width: 530px) {
