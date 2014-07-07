@@ -143,10 +143,12 @@ header .keep-btn:hover, header .transition-btn:hover {
 	font-weight: 100;
 	font-size: 11px;
 }
-.request-btn {
+.fixed-btn {
 	position: fixed;
 	top: 5px;
 	right: 10px;
+}
+.request-btn, .events-btn {
 	z-index: 3;
 	color: #FAEB8C;
 	font-size: 18px;
@@ -161,7 +163,7 @@ header .keep-btn:hover, header .transition-btn:hover {
 	border: 1px solid rgba(65, 65, 65, 1);
 	background: rgba(65, 65, 65, 0.7);
 }
-.events-btn {
+.top-events-btn {
 	width: 600px;
 	color: #FFF;
 	font-size: 14px;
@@ -178,7 +180,7 @@ header .keep-btn:hover, header .transition-btn:hover {
 	background: rgba(65, 65, 65, 0.7);
 	position: relative;
 }
-.events-btn a {
+.top-events-btn a {
 	color: #fff;
 }
 .events-btn-block {
@@ -193,10 +195,10 @@ header .keep-btn:hover, header .transition-btn:hover {
 	font-family: 'Raleway', sans-serif;
 	color: #FAEB8C;
 }
-.events-btn .event-title {
+.top-events-btn .event-title {
 	font-size: 16px;
 }
-.request-btn:hover, .events-btn:hover {
+.request-btn:hover, .events-btn:hover, .top-events-btn:hover {
 	border: 1px solid rgba(65, 65, 65, 1);
 	background: rgba(50, 50, 50, 1);
 }
@@ -823,7 +825,7 @@ footer {
 }
 .events-window {
 	font-family: arial;
-	background: #FFF url(../img/keep-bg.png) center top;
+	background: #FFF url(../img/keep-bg.png) left top;
 	background-size: cover;
 }
 .events-title {
@@ -938,7 +940,7 @@ footer {
 	header {
 		height: 590px;
 	}
-	.events-btn {
+	.top-events-btn {
 		position: absolute;
 		top: 7px;
 		left: 10px;
@@ -962,7 +964,7 @@ footer {
 	}
 }
 
-@media (max-width: 830px) {
+@media (max-width: 860px) {
 	header h2 {
 		width: 100%;
 		margin-bottom: 10px;
@@ -977,6 +979,12 @@ footer {
 	}
 	.scroll-text {
 		display: none;
+	}
+	.fixed-btn {
+		display: none;
+	}
+	.btns-mobile {
+		display: block;
 	}
 }
 @media (max-width: 690px) {
@@ -1031,8 +1039,20 @@ footer {
 	.pop-window table {
 		width: 100% !important;
 	}
+	.top-events-btn {
+		text-align: center;
+		width: 90%;
+		left: 50%;
+		margin-left: -45% !important;
+	}
+	.events-btn-block {
+		padding-right: 0;
+	}
+	.events-click {
+		display: none;
+	}
 }
-@media (max-width: 495px) {
+@media (max-width: 530px) {
 	header h1 {
 		font-size: 30px;
 	}
@@ -1040,13 +1060,7 @@ footer {
 		font-size: 16px;
 	}
 	.logo {
-		margin: 120px auto 20px auto;
-	}
-	.request-btn {
-		display: none;
-	}
-	.btns-mobile {
-		display: block;
+		margin: 120px auto 0 auto;
 	}
 	footer {
 		padding-top: 20px;
