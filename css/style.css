@@ -898,7 +898,7 @@ footer {
 .info-window img {
 	max-width: 100%;
 }
-.window-close {
+.window-close, .events-close {
     color: #222;
     text-decoration: none;
     margin-right: 5px;
@@ -914,6 +914,10 @@ footer {
     position: absolute;
 	right: 1px;
 	top: 1px;
+}
+.events-close {
+	display: none;
+	color: #FAEB8C;
 }
 .window-close:hover {
     -ms-transform: rotate(360deg); 
@@ -1040,7 +1044,6 @@ footer {
 		width: 100% !important;
 	}
 	.top-events-btn {
-		text-align: center;
 		width: 90%;
 		left: 50%;
 		margin-left: -45% !important;
@@ -1050,6 +1053,9 @@ footer {
 	}
 	.events-click {
 		display: none;
+	}
+	.events-close {
+		display: block;
 	}
 }
 @media (max-width: 530px) {

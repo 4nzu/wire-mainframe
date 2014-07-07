@@ -15,10 +15,11 @@
 	<header>
 		<div class="container">
 			<button type="button" class="events-btn top-events-btn">
+				<i class="events-close">&#10006;</i>
 				<div class="events-btn-block">
 				</div>
 				<div class="events-click">
-					more events
+					View More
 				</div>
 			</button>
 			<div class="logo"><a href="http://www.brandonassociates.com/"><img src="img/brandon-systems.png" title="Brandon Systems"></a></div>
@@ -305,6 +306,12 @@ resource.</p>
 			$('.window-close, .darkwin').click(function() {
 				$('.window').hide();
 				$('.darkwin').hide();
+			})
+
+			$('.events-close').click(function(e) {
+				e.stopImmediatePropagation();
+				$('.top-events-btn').hide();
+				$('.logo').css('margin-top', '20px');
 			})
 
 			$(document).keyup(function(e) {
