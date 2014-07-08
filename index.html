@@ -12,16 +12,16 @@
 	<script src="js/simple-slider.min.js"></script>
 </head>
 <body>
+	<button type="button" class="events-btn top-events-btn">
+		<i class="events-close">&#10006;</i>
+		<div class="events-btn-block">
+		</div>
+		<div class="events-click">
+			more...
+		</div>
+	</button>
 	<header>
 		<div class="container">
-			<button type="button" class="events-btn top-events-btn">
-				<i class="events-close">&#10006;</i>
-				<div class="events-btn-block">
-				</div>
-				<div class="events-click">
-					more...
-				</div>
-			</button>
 			<div class="logo"><a href="http://www.brandonassociates.com/"><img src="img/brandon-systems.png" title="Brandon Systems"></a></div>
 			<h1>Modernizing the Mainframe with WIRE<img style="display: none;" src="img/wire_color.png"></h1>
 			<h2>Modernize legacy applications with new Web interfaces or within rich Web apps to expand user access and accelerate returns on mainframe investments.</h2>
@@ -312,7 +312,7 @@ resource.</p>
 			$('.events-close').click(function(e) {
 				e.stopImmediatePropagation();
 				$('.top-events-btn').hide();
-				$('.logo').css('margin-top', '20px');
+				$('.logo').css('margin-top', '70px');
 			})
 
 			$(document).keyup(function(e) {
