@@ -304,9 +304,11 @@ resource.</p>
 				$('.events-window').show();
 			})
 
-			$('.window-close, .darkwin').click(function() {
-				$('.window').hide();
-				$('.darkwin').hide();
+			$('.window-close, .darkwin').click(function(e) {
+				if (($(e.target).parents('.window').length === 0) || ($(e.target).hasClass('window-close'))) { 
+					$('.window').hide();
+					$('.darkwin').hide();
+				}
 			})
 
 			$('.events-close').click(function(e) {
